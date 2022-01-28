@@ -1,60 +1,22 @@
-print('--------')
-a = input()
-oof = a
-f = 0
-c = str(0)
+from eightbit import eightbit
+from decimal import decimal 
 
-if a[0] == '1':
-  if a[1] == '0':
-    c = c + '1'
-  if a[1] == '1':
-    c = c + '0'
-  if a[2] == '0':
-    c = c + '1'
-  if a[2] == '1':
-    c = c + '0'
-  if a[3] == '0':
-    c = c + '1'
-  if a[3] == '1':
-    c = c + '0'
-  if a[4] == '0':
-    c = c + '1'
-  if a[4] == '1':
-    c = c + '0'
-  if a[5] == '0':
-    c = c + '1'
-  if a[5] == '1':
-    c = c + '0'
-  if a[6] == '0':
-    c = c + '1'
-  if a[6] == '1':
-    c = c + '0'
-  if a[7] == '0':
-    c = c + '1'
-  if a[7] == '1':
-    c = c + '0'
+b = 1
 
-  a = c 
-print(c)
+d = input('''
+- - - - - - MENU - - - - - -
+  1 -  Decimal to Binary
+  2 -  Binary to Decimal
 
-if a[7] == '1':
-  f = f + 1
-if a[6] == '1':
-  f = f + 2
-if a[5] == '1':
-  f = f + 4
-if a[4] == '1':
-  f = f + 8
-if a[3] == '1':
-  f = f + 16
-if a[2] == '1':
-  f = f + 32
-if a[1] == '1':
-  f = f + 64
-if oof[0] == '1':
-  f = (f*-1)-1
+''')
+if d == '1':
+  decimal()
 
-print(f)
-
-b = int(input())
-print(bin(b))
+if d == '2':
+  while b == 1:
+    eightbit()
+    a = input('Run Again? y or n -- ')
+    if a == 'y':
+      print()
+    else:
+      b = 2
